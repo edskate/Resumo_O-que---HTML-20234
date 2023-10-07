@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão 02 JavaScript</title>
+    <link rel="shortcut icon" href="img/Javascript.256.png" type="image/x-icon">
+    <script src="app.js"></script>
+    <style>
+        body{
+            background-color: #8080c0;
+        }
+      
+        h1{
+            color: black;
+            margin: 30px;
+            text-shadow: -1px 2px 3px ;
+        }
+        button{
+            background-color: #80ff00;
+            font-size: 15px;
+            border: 2px solid;
+            margin: 15px;
+            border-radius: 10px 10px 10px ;
+        }
+        p{
+        font-size: 25px;
+        color: wheat;
+        margin: 15px;
+        text-shadow: -2px 3px 4px #000;
+        }
+        em{
+            color: white;
+        margin: 40px;
+        }
+   figure{
+    border: thin #c0c0c0;
+    display: flex;
+padding: 5px;
+max-width: 2020px;
+margin-top: auto;
+   }
+    </style>
+
+</head>
+<body>
+    <h1>Criando um botão 2 em JavaScript.</h1>
+<figure>
+    <img src="img/Javascript.256.png" width="100" alt=""> 👈 é 👉
+    <img src="img/Html.512.png" width="100" alt="">
+    <figcaption></figcaption>
+</figure>
+    <!-- Botão de clique -->
+    <button id="botaoClique">Clique em mim</button>
+
+    <!-- Elemento para exibir o contador de cliques -->
+    <p>Você clicou no botão <span id="contador">0</span> vezes.</p>
+    <p><em>👆Click no Botão Verde.</em></p>
+    <br>
+    <p><em>🧑👉Depois atualize o navegador .</em></p>
+
+    <!-- Inclua um script JavaScript -->
+    <script>
+        // Obtém o botão pelo ID
+        var botao = document.getElementById("botaoClique");
+
+        // Obtém o elemento do contador pelo ID
+        var contadorElemento = document.getElementById("contador");
+
+        // Inicializa o contador
+        var contadorCliques = 0;
+
+        // Adiciona um ouvinte de evento para o clique no botão
+        botao.addEventListener("click", function() {
+            // Incrementa o contador de cliques
+            contadorCliques++;
+
+            // Atualiza o texto do elemento do contador
+            contadorElemento.textContent = contadorCliques;
+        });
+    </script>
+    <br>
+    <a href="Botão03.html"><h2>🧑👉Botão 03.</h2></a>
+</body>
+</html>

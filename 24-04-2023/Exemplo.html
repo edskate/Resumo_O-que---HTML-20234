@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo Javascript.</title>
+    <style>
+        body{
+            margin: 50px;
+            align-items: center;
+            min-height: 50vh;
+            background: #c0c0c0;
+            justify-content: center;
+            flex-direction: column;
+            position: absolute;
+        }
+        li, ol, p{
+            font-size: 25px;
+            color: rgb(2, 2, 5);
+            transition: 0.5s;
+            text-shadow: -1px 2px 3px #000;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de JavaScript. 24-04-2023</h1>
+    <p>
+      A qui está um exemplo simples de um programa <br />
+      que solicita ao usuario que insira um número e, <br />
+      em seguida, verifique se esse número é par ou impar:
+    </p>
+    <script>
+      // Solicita ao usuário que insira um número
+      var numero = prompt("Por favor, insira um número:");
+
+      // Converte a entrada do usuário em um número inteiro
+      numero = parseInt(numero);
+
+      // Verifica se o número é par ou ímpar
+      if (numero % 2 === 0) {
+        alert(numero + " é um número par.");
+      } else {
+        alert(numero + " é um número ímpar.");
+      }
+    </script>
+  </body>
+</html>

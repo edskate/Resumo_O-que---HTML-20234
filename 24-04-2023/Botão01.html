@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando um Botão de perguntas 01.</title>
+    <link rel="shortcut icon" href="img/Javascript.256.png" type="image/x-icon">
+    <style>
+        body{
+            background-color: #408080;
+        }
+        img{
+            margin: 50px;
+            
+        }
+        h1{
+            margin: 50px;
+        }
+        h2{
+            color: #0080c0;
+            font-size: 55px;
+            margin: 15px;
+            text-shadow: -1px 2px 3px #000;
+        }
+        figcaption{
+          margin: 1%;
+          font-size: 30px;
+        }
+        button{
+            font-size: 30px;
+            border: 3px solid;
+            border-radius: 10px 10px 10px;
+            box-shadow: 2px 3px 4px ;
+            margin: 30px;
+        }
+        h3{
+          color: #044280;
+            font-size: 40px;
+            margin: 15px;
+            text-shadow: -1px 2px 3px #000;
+        }
+        p{
+            width: 700px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Criando um Botão de Perguntas.</h1>
+<figure>
+    <img src="img/File-JavaScript.128.png" width="100" alt="">
+    <figcaption><h2>Javascrip.Botão 01.</h2></figcaption>
+    <!-- Botão para exibir a pergunta -->
+    <button id="botaoPergunta">Clique aqui para a pergunta</button>
+
+    <!-- Elemento para exibir a resposta -->
+    <div id="resposta"></div>
+
+    <!-- Inclua um script JavaScript -->
+    <script>
+        // Obtém o botão pelo ID
+        var botao = document.getElementById("botaoPergunta");
+
+        // Adiciona um ouvinte de evento para o clique no botão
+        botao.addEventListener("click", function() {
+            // Pergunta ao usuário e armazena a resposta
+            var pergunta = prompt("Qual é a sua pergunta?");
+            
+            // Exibe a resposta na página
+            var respostaElemento = document.getElementById("resposta");
+            respostaElemento.innerHTML = "<p>Sua pergunta foi:</p> " + pergunta;
+        });
+    </script>
+    <p>Neste exemplo, temos um botão com o ID "botaoPergunta" e um elemento <div> com o ID "resposta" que será usado para exibir a resposta.</div>
+        <p> Quando o botão é clicado, ele abre um prompt onde o usuário pode inserir uma pergunta.</p>
+        <p> A resposta inserida é então exibida na página dentro do elemento <div>. Você pode personalizar o código e o estilo conforme necessário para se adequar ao seu projeto.</div>
+    <a href="Botão02.html"><h3>👦👉Botão 02</h3></a>
+</figure>
+</body>
+</html>
